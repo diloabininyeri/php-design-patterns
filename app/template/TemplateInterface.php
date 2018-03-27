@@ -1,12 +1,23 @@
 <?php
 
-
 namespace App\template;
 
+/**
+ * @author <dılo sürücü>
+ * @package
+ * Interface TemplateInterface
+ * @package App\template
+ */
 interface TemplateInterface
 {
 
-       function prepareWater();
+    /**
+     * @return mixed
+     */
+    function prepareWater();
 
-        function prepareSolid();
+    /**
+     * @return mixed
+     */
+    function prepareSolid();
 }
