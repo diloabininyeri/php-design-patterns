@@ -27,9 +27,12 @@ class MementoTest extends TestCase
 
 
         $firstState = $originator->getStateFromMemento($caretaker->get(0));
+        $seconState=$originator->getStateFromMemento($caretaker->get(1));
 
 
        $this->assertEquals($firstState, "first");
+
+       $this->assertEquals("second",$seconState);
     }
 }
 
