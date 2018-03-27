@@ -9,7 +9,24 @@
 namespace App\template;
 
 
-class Cafe
+class Cafe implements TemplateInterface
 {
 
+    /**
+     * @return string
+     */
+    public   function prepareWater()
+    {
+
+        return "hot ";
+    }
+
+    /**
+     * @return string
+     */
+    public  function prepareSolid()
+    {
+
+        return " Caffe";
+    }
 }

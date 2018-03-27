@@ -1,12 +1,24 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: mehmet
- * Date: 27.03.2018
- * Time: 16:05
- */
 
-class TemplateTest
+include_once "../vendor/autoload.php";
+
+use PHPUnit\Framework\TestCase;
+use App\factory\Factory;
+use App\template\{
+    Tea,Cafe
+};
+
+class TemplateTest extends TestCase
 {
 
+    public function testTemplate()
+    {
+
+        $tea=new Tea();
+        $resultTea=$tea->prepareDrink();
+
+
+
+        $this->assertEquals("hot Tea",$resultTea);
+    }
 }

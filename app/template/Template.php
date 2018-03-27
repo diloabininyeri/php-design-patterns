@@ -9,7 +9,13 @@
 namespace App\template;
 
 
-class Template
-{
+abstract class Template{
+
+
+    public function prepareDrink()
+    {
+
+        return $this->prepareWater().$this->prepareSolid();
+    }
 
 }

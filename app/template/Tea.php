@@ -9,7 +9,25 @@
 namespace App\template;
 
 
-class Tea
+
+class Tea extends Template implements TemplateInterface
 {
 
+    /**
+     * @return string
+     */
+    public   function prepareWater()
+    {
+
+        return "hot ";
+    }
+
+    /**
+     * @return string
+     */
+    public  function prepareSolid()
+    {
+
+        return "Tea";
+    }
 }
