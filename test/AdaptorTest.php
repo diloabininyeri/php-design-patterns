@@ -7,7 +7,7 @@
 use PHPUnit\Framework\TestCase;
 
 use App\adaptor\{
-    Book,Adaptor
+    Book, Adaptor
 };
 
 class AdaptorTest extends TestCase
@@ -16,13 +16,13 @@ class AdaptorTest extends TestCase
     public function testAdaptor()
     {
 
-        $book=new Book();
+        $book = new Book();
 
-        $adaptor=new Adaptor($book); //depency enjection
+        $adaptor = new Adaptor($book); //depency enjection
 
-        $year=$adaptor->getNobelYear();
+        $year = $adaptor->getNobelYear();
 
-        $this->assertEquals($year,2006);
+        $this->assertEquals($year, 2006);
     }
 
 }

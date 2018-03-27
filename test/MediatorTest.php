@@ -17,9 +17,9 @@ class MediatorTest extends TestCase
     {
 
 
-        $mediator=new Mediator();
+        $mediator = new Mediator();
 
-        $this->assertEquals($mediator->getMariaMessage(),$mediator->getMessageJhon());
+        $this->assertEquals($mediator->getMariaMessage(), $mediator->getMessageJhon());
 
     }
 

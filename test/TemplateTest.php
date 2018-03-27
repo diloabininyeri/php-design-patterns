@@ -17,8 +17,6 @@ class TemplateTest extends TestCase
 
         $tea = new Tea();
         $resultTea = $tea->prepareDrink();
-
-
         $this->assertEquals("hot Tea", $resultTea);
     }
 }

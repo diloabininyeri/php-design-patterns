@@ -4,11 +4,10 @@
  */
 
 
-
 use PHPUnit\Framework\TestCase;
 
 use App\builder\{
-    Page,BuilderPage,DirectorPage
+    Page, BuilderPage, DirectorPage
 };
 
 class BuilderPageTest extends TestCase
@@ -18,8 +17,8 @@ class BuilderPageTest extends TestCase
     public function testBuilderPattern()
     {
 
-        $builder=new BuilderPage();
-        $director=new DirectorPage($builder);
+        $builder = new BuilderPage();
+        $director = new DirectorPage($builder);
 
 
         echo $director->publishPage();

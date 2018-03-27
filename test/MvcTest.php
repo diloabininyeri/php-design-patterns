@@ -16,8 +16,8 @@ class MvcTest extends TestCase
      */
     public function testMvc()
     {
-        $controller=(new Controller())->getModel();
+        $controller = (new Controller())->getModel();
 
-        $this->assertEquals('<h1>admin</h1>',$controller);
+        $this->assertEquals('<h1>admin</h1>', $controller);
     }
 }
