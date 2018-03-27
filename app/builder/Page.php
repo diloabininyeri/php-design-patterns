@@ -67,5 +67,8 @@ class Page
         $this->page .= '</body>';
         $this->page .= '</html>';
 
+        return $this->page;
+
+
     }
 }

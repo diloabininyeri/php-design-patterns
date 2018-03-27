@@ -31,7 +31,7 @@ class BuilderPage
      */
     public function setTitle($title)
     {
-        $this->page->setTitle();
+        $this->page->setTitle($title);
     }
 
     /**

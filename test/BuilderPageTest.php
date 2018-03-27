@@ -7,20 +7,23 @@ include_once "../vendor/autoload.php";
 
 use PHPUnit\Framework\TestCase;
 
-use App\builder\{Page,BuilderPage,DirectorPage};
+use App\builder\{
+    Page,BuilderPage,DirectorPage
+};
 
-class BuilderPageTest
+class BuilderPageTest extends TestCase
 {
 
 
     public function testBuilderPattern()
     {
 
+        $builder=new BuilderPage();
+        $director=new DirectorPage($builder);
 
-        $buidlder=new BuilderPage();
-
-        $director=new DirectorPage($buidlder);
 
         echo $director->publishPage();
     }
 }
+
+

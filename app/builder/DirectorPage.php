@@ -17,7 +17,7 @@ class DirectorPage
     public function __construct(BuilderPage $builderPage)
     {
 
-        $this->buildirPage = builderPage;
+        $this->buildirPage = $builderPage;
     }
 
 
