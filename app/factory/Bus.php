@@ -12,4 +12,19 @@ namespace App\factory;
 class Bus
 {
 
+    /**
+     * @return string
+     */
+    public function getModel()
+    {
+        return "MAN"; //AHİRETTE İMAN :)
+    }
+
+    /**
+     * @return int
+     */
+    public function price()
+    {
+        return 25000;
+    }
 }

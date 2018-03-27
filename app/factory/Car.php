@@ -1,12 +1,25 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: mehmet
- * Date: 27.03.2018
- * Time: 15:24
- */
+
+namespace App\factory;
 
 class Car
 {
+
+    /**
+     * @return string
+     */
+    public function getModel()
+    {
+        return "BMW";
+    }
+
+    /**
+     * @return int
+     */
+    public function price()
+    {
+        return 15000;
+    }
+
 
 }
