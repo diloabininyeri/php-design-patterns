@@ -1,13 +1,8 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: mehmet
  * Date: 27.03.2018
  * Time: 13:30
  */
-
-include_once "../vendor/autoload.php";
-
 use PHPUnit\Framework\TestCase;
 
 use App\delegate\{

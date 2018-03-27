@@ -5,7 +5,7 @@
  * all class interqaction eachself
  * maria john michle
  */
-include_once "../vendor/autoload.php";
+
 
 use PHPUnit\Framework\TestCase;
 use App\mediator\Mediator;

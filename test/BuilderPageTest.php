@@ -3,7 +3,7 @@
  * Time: 18:52
  */
 
-include_once "../vendor/autoload.php";
+
 
 use PHPUnit\Framework\TestCase;
 

@@ -4,8 +4,6 @@
  * Time: 13:52
  */
 
-include_once "../vendor/autoload.php";
-
 use PHPUnit\Framework\TestCase;
 use App\facade\{
     Member, Message, Save

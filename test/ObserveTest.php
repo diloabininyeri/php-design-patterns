@@ -3,9 +3,8 @@
  * Date: 27.03.2018
  * Time: 17:16
  */
-include_once "../vendor/autoload.php";
-
 use PHPUnit\Framework\TestCase;
+
 use App\observe\{
     Facebook, Google, Observe
 };

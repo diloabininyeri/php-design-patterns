@@ -1,7 +1,5 @@
 <?php
 
-include_once "../vendor/autoload.php";
-
 use PHPUnit\Framework\TestCase;
 use App\singletion\Session;
 
