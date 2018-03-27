@@ -1372,8 +1372,8 @@ EOF
     {
         $constraint = new Count(5);
 
-        $this->assertTrue($constraint->evaluate(new \TestIterator([1, 2, 3, 4, 5]), '', true));
-        $this->assertFalse($constraint->evaluate(new \TestIterator([1, 2, 3, 4]), '', true));
+        $this->assertTrue($constraint->evaluate(new \MyIteratorTest([1, 2, 3, 4, 5]), '', true));
+        $this->assertFalse($constraint->evaluate(new \MyIteratorTest([1, 2, 3, 4]), '', true));
     }
 
     public function testConstraintCountWithAnObjectImplementingCountable(): void

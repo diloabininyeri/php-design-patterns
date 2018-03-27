@@ -25,10 +25,10 @@ class SameSizeTest extends ConstraintTestCase
 
     public function testConstraintSameSizeWithAnIteratorWhichDoesNotImplementCountable(): void
     {
-        $constraint = new SameSize(new \TestIterator([1, 2, 3, 4, 5]));
+        $constraint = new SameSize(new \MyIteratorTest([1, 2, 3, 4, 5]));
 
-        $this->assertTrue($constraint->evaluate(new \TestIterator([6, 7, 8, 9, 10]), '', true));
-        $this->assertFalse($constraint->evaluate(new \TestIterator([1, 2, 3, 4]), '', true));
+        $this->assertTrue($constraint->evaluate(new \MyIteratorTest([6, 7, 8, 9, 10]), '', true));
+        $this->assertFalse($constraint->evaluate(new \MyIteratorTest([1, 2, 3, 4]), '', true));
     }
 
     public function testConstraintSameSizeWithAnObjectImplementingCountable(): void

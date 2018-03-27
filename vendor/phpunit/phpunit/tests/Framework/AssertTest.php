@@ -349,20 +349,20 @@ class AssertTest extends TestCase
     {
         $foo = new \stdClass;
 
-        $this->assertContains($foo, new \TestIterator([$foo]));
+        $this->assertContains($foo, new \MyIteratorTest([$foo]));
 
         $this->expectException(AssertionFailedError::class);
 
-        $this->assertContains($foo, new \TestIterator([new \stdClass]));
+        $this->assertContains($foo, new \MyIteratorTest([new \stdClass]));
     }
 
     public function testAssertIteratorContainsString(): void
     {
-        $this->assertContains('foo', new \TestIterator(['foo']));
+        $this->assertContains('foo', new \MyIteratorTest(['foo']));
 
         $this->expectException(AssertionFailedError::class);
 
-        $this->assertContains('foo', new \TestIterator(['bar']));
+        $this->assertContains('foo', new \MyIteratorTest(['bar']));
     }
 
     public function testAssertStringContainsString(): void
