@@ -16,9 +16,9 @@ class Controller
     function getModel()
     {
 
-        $model=new Model();
-        $data=$model->get();
-        return viewfunction("view.php",compact("data"));
+         $model=new Model();
+         $data=$model->get();
+         return viewfunction("view.php",compact("data"));
 
 
     }
