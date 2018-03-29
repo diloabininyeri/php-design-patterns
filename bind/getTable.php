@@ -4,12 +4,12 @@
  * Time: 00:25
  */
 
-include_once "autoload.php";
+require_once realpath(__DIR__ . "../../vendor/autoload.php");
 
 (function () {
 
     echo $this->table;
 
-})->call(new Users);
+})->call(new Bind\call\Users);
 
 

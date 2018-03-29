@@ -6,10 +6,12 @@
         "phpdocumentor/reflection-docblock": "^4.3"
     },
     "autoload":{
+        "files":["middleware.php"],
 
         "psr-4":{
 
-            "App\\":"app/"
+            "App\\":"app/",
+            "Bind\\":"bind/"
         }
     }
 }
