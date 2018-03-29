@@ -6,8 +6,7 @@
 
 namespace App\composite;
 
-use App\composite\InputText;
-use App\composite\InputPassword;
+
 
 /**
  * Class Composite
