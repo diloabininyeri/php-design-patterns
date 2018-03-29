@@ -24,6 +24,10 @@ class Strategyclass
     }
 
 
+    /**
+     * @param array $data
+     * @return mixed
+     */
     public function update(array $data)
     {
         return $this->class->update($data);

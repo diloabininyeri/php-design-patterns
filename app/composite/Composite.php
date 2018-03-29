@@ -33,7 +33,7 @@ class Composite
         $this->arrayList[] = $class;
     }
 
-    /**
+    /**if you want html form u easly do
      * @return array|string
      */
     public function render()
